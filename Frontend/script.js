@@ -123,7 +123,7 @@ async function predict() {
 
     try {
 
-        let response = await fetch("https://heart-disease-api8r93.onrender.com/predict", {
+        let response = await fetch("https://heart-disease-api-8r93.onrender.com", {
 
             method: "POST",
 
@@ -721,7 +721,7 @@ async function checkAPI() {
 
     try {
 
-        const response = await fetch("https://heart-disease-api8r93.onrender.com/");
+        const response = await fetch("https://heart-disease-api-8r93.onrender.com");
 
         if (response.ok) {
 
