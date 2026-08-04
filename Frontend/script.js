@@ -123,7 +123,7 @@ async function predict() {
 
     try {
 
-        let response = await fetch("https://heart-disease-api-8r93.onrender.com", {
+        let response = await fetch("https://heart-disease-api-8r93.onrender.com/predict", {
 
             method: "POST",
 
@@ -193,6 +193,9 @@ async function predict() {
         console.log(result);
 
         let probability = Number(result.risk_probability);
+
+        console.log(result);
+        console.log("Probability =", probability);
 
         let resultBox = document.getElementById("result");
 
